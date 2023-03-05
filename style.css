@@ -1,0 +1,473 @@
+@import "reset.css";
+@import "media.css";
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background-color: #fff;
+}
+
+:root {
+    --container-width: 1270px;
+    --container-padding: 15px;
+    --color: #373131;
+    --color2: rgba(121, 103, 103, 0.564);
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+
+/*Header*/
+
+.header {
+    position: relative;
+    min-height: 940px;
+    padding-top: 44px;
+    color: var(--color);
+    background-image: url(https://images.wallpaperscraft.ru/image/single/gora_uedinenie_chelovek_130462_1920x1080.jpg);
+}
+
+a {
+    color: var(--color);
+}
+
+.headerTop {
+    margin-bottom: 86px;
+}
+
+.headerContent {
+    max-width: 592px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.navList {
+    display: flex;
+    column-gap: 80px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navList a:hover {
+    text-decoration: underline;
+}
+
+.navLogin {
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.navLogin a:active {
+    position: relative;
+    top: 1px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.253);
+    letter-spacing:1px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 13px 44px;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 500;
+    background: linear-gradient(132.05deg, #eda790 -17.38%, #f49110 78.4%), #ffffff;
+}
+
+.btn:hover {
+    color: hsl(60, 70%, 71%);
+}
+
+.lessContentBtn {
+    display: none;
+    background: linear-gradient(132.05deg, #eda790 -17.38%, #f49110 78.4%), #ffffff;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.lessContent {
+    display: none;
+}
+
+.menuIcon.menuIcon--active {
+    background-color: transparent;
+}
+
+
+/*Header content*/
+
+.headerBadge {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    background: rgba(60, 58, 58, 0.25);
+    padding: 12px 31px;
+    margin-bottom: 8px;
+}
+
+.headerTitle {
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.headerText {
+    margin-bottom: 65px;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.737);
+}
+
+.headerBtn {
+    display: inline-block;
+    padding: 27px 48px;
+    border-radius: 27px;
+    font-size: 25px;
+    font-weight: 500;
+    background: linear-gradient(132.05deg, #eda790 -17.38%, #f49110 78.4%), #ffffff;
+}
+
+.headerBtn:hover {
+    color: hsl(60, 70%, 71%);
+}
+
+.headerBtn:active {
+    position: relative;
+    top: 1px;
+}
+
+/*Destinations*/
+.destinations {
+    padding: 96px 0 100px;
+}
+
+.destinationsTitle {
+    color: var(--color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+span {
+    color: var(--color);
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.destinationsText {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--color2);
+}
+
+.destinationsBtn {
+    display: inline-block;
+    padding: 27px 48px;
+    border-radius: 27px;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+    background: linear-gradient(132.05deg, #eda790 -17.38%, #f49110 78.4%), #ffffff;
+}
+
+.destinationsBtn:hover {
+    color: hsl(60, 70%, 71%);
+}
+
+.destinationsBtn:active {
+    position: relative;
+    top: 1px;
+}
+
+.destinationsImage {
+    display: flex;
+    direction: ltr;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.image {
+    width: 400px;
+}
+
+.image img:hover {
+    transform: scale(1.1);
+}
+
+.textImg {
+    color: var(--color);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.upperText {
+    color: var(--color2);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/*About Us Content*/
+
+.aboutUs {
+    padding: 100px 0 133px;
+}
+
+.aboutUsHeader {
+    color: var(--color);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.aboutUsInformation {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color2);
+}
+
+.aboutUsMainContent {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 68px;
+    margin-top: 65px;
+}
+
+.aboutUsImg img {
+    height: 500px;
+    width: 500px;
+    border-radius: 60px;
+}
+
+.aboutUsImg {
+    display: flex;
+}
+
+.aboutUsTitle {
+    margin-bottom: 35px;
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--color);
+}
+
+.reviewAvatar img {
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background-color: #f49110;
+}
+
+.reviewClient {
+    margin-bottom: 60px;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.reviewClientInfo h3 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--color);
+}
+
+.reviewClientInfo p {
+    font-size: 25px;
+    color: var(--color2);
+}
+
+.reviewText {
+    color: var(--color2);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.rating img {
+    margin-left: -40px;
+    margin-top: -2px;
+    width: 300px;
+}
+
+/*Register form*/
+
+.register {
+    padding: 0px 0 80px;
+}
+
+.containerRegister {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.containerRegister h1 {
+    color: var(--color);
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.containerRegister p {
+    font-size: 24px;
+    color: var(--color2);
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border-radius: 3px;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f49110;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background: linear-gradient(132.05deg, #eda790 -17.38%, #f49110 78.4%), #ffffff;
+    border-radius: 5px;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    color: hsl(60, 70%, 71%);
+    opacity: 1;
+}
+
+.registerbtn:active {
+    position: relative;
+    top: 1px;
+}
+
+.signin {
+    text-align: center;
+}
+
+/*Footer*/
+.footer {
+    background: linear-gradient(132.05deg, #eda790 -17.38%, #f49110 78.4%), #ffffff;
+}
+
+.navFooter {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navListFooter {
+    display: flex;
+    column-gap: 30px;
+}
+
+
+/*media*/
+
+@media (max-width: 1200px) {
+    .destinationsImage {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1125px) {
+    .headerBtn {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .aboutUsImg {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .aboutUsMainContent {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navList {
+        display: none;
+    }
+
+    .navLogin {
+        display: none;
+    }
+
+    .lessContentBtn {
+        display: block;
+    }
+
+    .navMobile {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-image: url(https://images.wallpaperscraft.ru/image/single/gora_uedinenie_chelovek_130462_3840x2400.jpg);
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        align-items: center;
+    }
+
+    .navMobile .navList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        font-size: 20px;
+
+    }
+
+    .navMobile .navLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        font-size: 20px;
+    }
+
+    .navMobile .lessContentBtn {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+    }
+}
